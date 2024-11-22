@@ -1,0 +1,89 @@
+/* styles.css */
+
+/* Mise en forme générale de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.accueil {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.intro {
+    margin-bottom: 30px;
+}
+
+.intro h2 {
+    font-size: 2em;
+    color: #e67e22;
+    margin-bottom: 15px;
+}
+
+.intro p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta {
+    background-color: #e67e22;
+    padding: 30px;
+    color: white;
+    border-radius: 8px;
+}
+
+.cta h3 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.cta p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #fff;
+    color: #e67e22;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid #e67e22;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+/*quand je clique ou quand je passe au dessus du boutton, ça deviendra orange*/
+.btn:hover {
+    background-color: #e67e22;
+    color: #fff;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    margin-top: 40px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-nous</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <h1>Contactez-nous</h1>
+    </header>
+
+    <section class="contact">
+        <div class="formulaire">
+            <h2>Envoyez-nous un message</h2>
+            <form action="#" method="POST">
+                <label for="prenom">Prénom</label>
+                <input type="text" id="prenom" name="prenom" required>
+
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="nom" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit" class="btn">Envoyer</button>
+            </form>
+        </div>
+
+        <div class="infos">
+            <h3>Informations de Contact</h3>
+            <p><strong>Horaires d'ouverture:</strong></p>
+            <ul>
+                <% horaires.forEach(function(horaire) { %>
+                    <li><%= horaire.jour %> : <%= horaire.heure %></li>
+                <% }); %>
+            </ul>
+
+            <p><strong>Numéro de téléphone:</strong> <a href="tel:<%= contact.telephone %>"><%= contact.telephoneAffichage %></a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Restaurant Mariziki - Tous droits réservés</p>
+    </footer>
+</body>
+</html>
+

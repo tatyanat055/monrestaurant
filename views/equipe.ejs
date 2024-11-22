@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notre Équipe</title>
+    <link rel="stylesheet" href="equipe.css">
+</head>
+<body>
+    <header>
+        <h1>Notre Équipe</h1>
+    </header>
+
+    <section class="equipe">
+        <% equipe.forEach(function(membre) { %>
+            <div class="membre">
+                <div class="info">
+                    <h2><%= membre.nom %></h2>
+                    <p class="poste"><%= membre.poste %></p>
+                </div>
+            </div>
+        <% }); %>
+    </section>
+
+</body>
+</html>
+
