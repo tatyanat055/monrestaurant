@@ -89,7 +89,7 @@ app.get('/contact', (req, res) => {
 });
 
 app.listen(2020, () => {
-    console.log("Le serveur est à l'écoute sur le port 2002");
+    console.log("Le serveur est à l'écoute sur le port 2020");
 });
 
 module.exports = app;

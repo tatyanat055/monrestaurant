@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="contact.css">
 </head>
 <body>
+    <!--BARRE DE NAVIGATION-->
+    <%- include('navbar') %>
     <header>
         <h1>Contactez-nous</h1>
     </header>
@@ -40,10 +42,7 @@
             <p><strong>Numéro de téléphone:</strong> <a href="tel:<%= contact.telephone %>"><%= contact.telephoneAffichage %></a></p>
         </div>
     </section>
-
-    <footer>
-        <p>&copy; 2024 Restaurant Mariziki - Tous droits réservés</p>
-    </footer>
+    <%- include('footer') %>
 </body>
 </html>
 

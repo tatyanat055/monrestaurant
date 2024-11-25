@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/acc.css">
+        <title>Page avec Navigation</title>
     <title>Accueil</title>
 </head>
 <body>
-    
+    <!--BARRE DE NAVIGATION-->
+    <%- include('navbar') %>
+
+    <!--CONTENU PRINCIPAL-->
     <header>
         <h1>Bienvenue au Restaurant Mariziki</h1>
     </header>
@@ -30,8 +34,6 @@
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Restaurant Mariziki - Tous droits réservés</p>
-    </footer>
+    <%- include('footer') %>
 </body>
 </html>
