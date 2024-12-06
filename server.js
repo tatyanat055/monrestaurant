@@ -1,15 +1,13 @@
-const http = require('http');
+const http = require("http");
+const app = require("./app");
 
-const app = require('./app');
-
-const numPort = 2002;
-
-app.set("port", numPort);
+const PORT = 2002;
 
 const server = http.createServer(app);
+const date = new Date();
 
-const date = new Date ();
-
-server.listen(numPort, () => {
-    console.log(date.toLocaleDateString(), date.toLocaleTimeString(), "Le serveur est activé au port : ", numPort);
+server.listen(PORT, () => {
+    console.log(
+        `${date.toLocaleDateString()} ${date.toLocaleTimeString()} - Le serveur est activé au port : ${PORT}`
+    );
 });

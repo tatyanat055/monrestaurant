@@ -49,6 +49,23 @@
                 <p class="prix">18,50€</p>
             </div>
         </div>
+        <a href="/formulaire"><button>Ajouter un nouveau plat</button></a>
+        <section class="menu">
+            <% if (plats.length > 0) { %>
+                <% plats.forEach(plat => { %>
+                    <div class="plat">
+                        <h2><%= plat.nom %></h2>
+                        <p>Prix : <%= plat.prix %> €</p>
+                        <p>Description : <%= plat.description %></p>
+                        <form action="/supprimer-plat/<%= plat.id %>" method="POST" style="display:inline;">
+                            <button type="submit">Supprimer</button>
+                        </form>
+                    </div>
+                <% }); %>
+            <% } else { %>
+                <p>Aucun plat disponible.</p>
+            <% } %>
+        </section>
     </section>
     <%- include('footer') %>
 </body>
